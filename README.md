@@ -10,14 +10,14 @@ In this study, we present a novel classification framework combining pre-trained
 Open a terminal (Linux, MACOS) or cmd (Windows), get access to code folder and run the get_ProtTrans.py:
 Example:
 ```markdown
-```python
 python get_ProtTrans.py -in "path/to/your/fasta/files" -out "path/to/your/embeddings"
+```
 ## Dataset Generation
 After retrieving ProtTrans embedings, you can generate a dataset by using get_dataset.py file:
 Example:
 ```markdown
-```python
 python get_datatset.py -in "path/to/your/embeddings" -out "path/to/your/file.npy" -dt ".prottrans" -maxseq 500
+```
 ## Training DeepCytokine
 You can train the FASTA files for DeepCytokine model using the quick and easyt-to-follow jupyter notebook: MCNN_Cytokine.pynb
 ## Test your new data
