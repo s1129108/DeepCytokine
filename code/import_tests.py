@@ -11,14 +11,12 @@ def data_label():
     return datalabel
 
 def MCNN_data_load(DATA_TYPE,MAXSEQ):
-    path_m_testing = "/mnt/D/jupyter/peter/data/ProtTrans/"+str(MAXSEQ)+"/membrane_protein/test_1.npy"
-    path_m_training = "/mnt/D/jupyter/peter/data/ProtTrans/"+str(MAXSEQ)+"/membrane_protein/train.npy"
+    # Update your paths
+    path_m_testing = "C:/jupyter/globe/deepcytokine/dataset/numpy/membrane/test.npy"
+    path_m_training = "C:/jupyter/globe/deepcytokine/dataset/numpy/membrane/train.npy"
 
-    path_v_testing = "/mnt/D/jupyter/peter/data/ProtTrans/"+str(MAXSEQ)+"/Cytokine_receptor/test.npy"
-    path_v_training = "/mnt/D/jupyter/peter/data/ProtTrans/"+str(MAXSEQ)+"/Cytokine_receptor/train.npy"
-   
-    #path_s = "/mnt/D/jupyter/Evan/vesicular_sat/DATASET/YD/"+str(MAXSEQ)+"/SecondaryATransporter.npy"
-    #path_v = "/mnt/D/jupyter/Evan/vesicular_sat/DATASET/YD/"+str(MAXSEQ)+"/VesicularTransporter.npy"
+    path_v_testing = "C:/jupyter/globe/deepcytokine/dataset/numpy/cytokine/test.npy"
+    path_v_training = "C:/jupyter/globe/deepcytokine/dataset/numpy/cytokine/train.npy"
    
     
     x_train,y_train=data_load(path_v_training,path_m_training)
